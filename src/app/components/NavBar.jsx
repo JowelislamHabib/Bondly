@@ -36,20 +36,20 @@ const NavBar = () => {
               <div className="flex flex-col gap-4">
                 <Link
                   href={"/"}
-                  className={`${isActive("/") ? "btn bg-[var(--bg-primary)] text-white" : "text-[var(--text-muted)]"} flex gap-1`}
+                  className={`${isActive("/") ? "btn bg-(--bg-primary) text-white" : "text-(--text-muted)"} flex gap-1`}
                 >
                   <LucideHome size={18} /> Home
                 </Link>
                 <Link
                   href={"/timeline"}
-                  className={`${isActive("/timeline") ? "btn bg-[var(--bg-primary)] text-white" : "text-[var(--text-muted)]"} flex gap-1`}
+                  className={`${isActive("/timeline") ? "btn bg-(--bg-primary) text-white" : "text-(--text-muted)"} flex gap-1`}
                 >
                   <LucideClock size={18} />
                   Timeline
                 </Link>
                 <Link
                   href={"/stats"}
-                  className={`${isActive("/stats") ? "btn bg-[var(--bg-primary)] text-white" : "text-[var(--text-muted)]"} flex  gap-1`}
+                  className={`${isActive("/stats") ? "btn bg-(--bg-primary) text-white" : "text-(--text-muted)"} flex  gap-1`}
                 >
                   <LucideChartLine size={18} />
                   Stats
@@ -65,20 +65,20 @@ const NavBar = () => {
         <div className="navbar-end gap-4 hidden md:inline-flex">
           <Link
             href={"/"}
-            className={`${isActive("/") ? "btn bg-[var(--bg-primary)] text-white" : "text-[var(--text-muted)]"} flex items-center gap-1`}
+            className={`${isActive("/") ? "btn bg-(--bg-primary) text-white" : "text-(--text-muted)"} flex items-center gap-1`}
           >
             <LucideHome size={18} /> Home
           </Link>
           <Link
             href={"/timeline"}
-            className={`${isActive("/timeline") ? "btn bg-[var(--bg-primary)] text-white" : "text-[var(--text-muted)]"} flex items-center gap-1`}
+            className={`${isActive("/timeline") ? "btn bg-(--bg-primary) text-white" : "text-(--text-muted)"} flex items-center gap-1`}
           >
             <LucideClock size={18} />
             Timeline
           </Link>
           <Link
             href={"/stats"}
-            className={`${isActive("/stats") ? "btn bg-[var(--bg-primary)] text-white" : "text-[var(--text-muted)]"} flex items-center gap-1`}
+            className={`${isActive("/stats") ? "btn bg-(--bg-primary) text-white" : "text-(--text-muted)"} flex items-center gap-1`}
           >
             <LucideChartLine size={18} />
             Stats

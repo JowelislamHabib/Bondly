@@ -17,7 +17,7 @@ const HeroText = () => {
                 <br />
                 relationships that matter most.
               </p>
-              <button className="btn bg-[var(--bg-primary)] text-white">
+              <button className="btn bg-(--bg-primary) text-white">
                 <LucidePlus /> Add a Friend
               </button>
             </div>
