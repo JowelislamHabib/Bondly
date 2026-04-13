@@ -1,11 +1,11 @@
-import NavBar from "./components/NavBar";
+import HeroText from "./components/Home/HeroText";
 
 export default function Home() {
   return (
     <>
       <div className="container mx-auto">
-        <h1 className="">Homepage</h1>
-      </div>{" "}
+        <HeroText />
+      </div>
     </>
   );
 }
