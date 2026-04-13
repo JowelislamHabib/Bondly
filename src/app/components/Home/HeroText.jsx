@@ -5,8 +5,8 @@ const HeroText = () => {
   return (
     <div className="container mx-auto px-4">
       <div>
-        <div className="hero">
-          <div className="hero-content text-center">
+        <div className="">
+          <div className=" text-center">
             <div className="">
               <h1 className="text-5xl font-bold">
                 Friends to keep close in your life
