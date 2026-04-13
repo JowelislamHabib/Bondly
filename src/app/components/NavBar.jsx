@@ -3,6 +3,7 @@ import { LucideChartLine, LucideClock, LucideHome } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const NavBar = () => {
   const navMenu = usePathname();
@@ -57,7 +58,16 @@ const NavBar = () => {
               </div>
             </ul>
           </div>
-          <Link href={"/"} className="text-xl font-bold">
+          <Link
+            href={"/"}
+            className="text-xl font-bold text-(--text-secondary) flex items-center gap-2 justify-center"
+          >
+            <Image
+              src="/assets/bondly.png"
+              height={40}
+              width={40}
+              alt="Bondly Logo"
+            ></Image>{" "}
             BondLy
           </Link>
         </div>
