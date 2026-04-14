@@ -9,7 +9,7 @@
     "tags": ["colleague"],
     "bio": "Met during a collaborative project.",
     "goal": 9,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "Jul 20, 2025"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["mentor"],
     "bio": "Guided me in career growth.",
     "goal": 10,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "Jul 18, 2025"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["friend", "school"],
     "bio": "Friend from school days.",
     "goal": 10,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "Jul 15, 2025"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["friend"],
     "bio": "Workout partner from gym.",
     "goal": 8,
-    "next_due_date": "2025-07-19"
+    "next_due_date": "Jul 19, 2025"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tags": ["friend", "college"],
     "bio": "Best friend from university.",
     "goal": 9,
-    "next_due_date": "2025-07-17"
+    "next_due_date": "Jul 17, 2025"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["family"],
     "bio": "Close cousin, meet often.",
     "goal": 10,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "Jul 18, 2025"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["partner"],
     "bio": "Business partner and collaborator.",
     "goal": 9,
-    "next_due_date": "2025-07-16"
+    "next_due_date": "Jul 16, 2025"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "tags": ["friend"],
     "bio": "Met through community events.",
     "goal": 9,
-    "next_due_date": "2025-07-19"
+    "next_due_date": "Jul 19, 2025"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "tags": ["colleague"],
     "bio": "Teammate from previous job.",
     "goal": 10,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "Jul 20, 2025"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "tags": ["friend", "online"],
     "bio": "Met through online platform.",
     "goal": 10,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "Jul 15, 2025"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "tags": ["friend"],
     "bio": "Connected through sports activities.",
     "goal": 8,
-    "next_due_date": "2025-07-19"
+    "next_due_date": "Jul 19, 2025"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "tags": ["colleague"],
     "bio": "Senior colleague and advisor.",
     "goal": 10,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "Jul 20, 2025"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "tags": ["friend"],
     "bio": "Met during a travel trip.",
     "goal": 8,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "Jul 18, 2025"
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "tags": ["manager"],
     "bio": "Former manager at workplace.",
     "goal": 9,
-    "next_due_date": "2025-07-19"
+    "next_due_date": "Jul 19, 2025"
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "tags": ["contact"],
     "bio": "Professional networking contact.",
     "goal": 9,
-    "next_due_date": "2025-07-16"
+    "next_due_date": "Jul 16, 2025"
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "tags": ["family"],
     "bio": "Close family member.",
     "goal": 8,
-    "next_due_date": "2025-07-17"
+    "next_due_date": "Jul 17, 2025"
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "tags": ["friend"],
     "bio": "One of my closest friends.",
     "goal": 10,
-    "next_due_date": "2025-07-21"
+    "next_due_date": "Jul 21, 2025"
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "tags": ["friend", "college"],
     "bio": "Friend from university.",
     "goal": 10,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "Jul 20, 2025"
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "tags": ["friend"],
     "bio": "Met through online gaming.",
     "goal": 9,
-    "next_due_date": "2025-07-17"
+    "next_due_date": "Jul 17, 2025"
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "tags": ["neighbour"],
     "bio": "Lives nearby, good relation.",
     "goal": 8,
-    "next_due_date": "2025-07-16"
+    "next_due_date": "Jul 16, 2025"
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "tags": ["client"],
     "bio": "Client from previous project.",
     "goal": 9,
-    "next_due_date": "2025-07-19"
+    "next_due_date": "Jul 19, 2025"
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "tags": ["friend"],
     "bio": "Workout accountability partner.",
     "goal": 9,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "Jul 18, 2025"
   },
   {
     "id": 23,
@@ -273,7 +273,7 @@
     "tags": ["colleague"],
     "bio": "Friendly colleague at work.",
     "goal": 10,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "Jul 20, 2025"
   },
   {
     "id": 24,
@@ -285,6 +285,6 @@
     "tags": ["mentor"],
     "bio": "Respected mentor in community.",
     "goal": 8,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "Jul 18, 2025"
   }
 ]

@@ -52,8 +52,11 @@ const TimelinePage = () => {
       <div className="mx-auto p-8 bg-slate-50  text-slate-800">
         <h1 className="text-4xl font-bold mb-6">Timeline</h1>
 
-        <select className="select select-bordered w-full max-w-xs mb-8 bg-white border-slate-200">
-          <option disabled selected>
+        <select
+          defaultValue=""
+          className="select select-bordered w-full max-w-xs mb-8 bg-white border-slate-200"
+        >
+          <option value="" disabled>
             Filter timeline
           </option>
           <option value="All">All entries</option>
