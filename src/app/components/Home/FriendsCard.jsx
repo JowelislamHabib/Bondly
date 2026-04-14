@@ -2,7 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const FriendsCard = (friend) => {
+const FriendsCard = ({ friend, params }) => {
+  const para = async (params) => {
+    const response = await fetch("http://localhost:3000/friends.json");
+    const friends = await response.json();
+    console.log(friends);
+  };
+
+  const myFriend = friend;
+  console.log(params);
+  const { name, picture, tags, days_since_contact } = myFriend;
+
   const relationStatus = {
     active: "bg-green-600 text-white border-green-700",
     "strong-connection": "bg-emerald-600 text-white border-emerald-700",
@@ -13,15 +23,13 @@ const FriendsCard = (friend) => {
     overdue: "bg-red-600 text-white border-red-700",
     dormant: "bg-gray-600 text-white border-gray-700",
   };
-  console.log(friend.friend);
-  const myFriend = friend.friend;
-  const { name, picture, tags, days_since_contact } = myFriend;
+
   const checkStatus = myFriend.status.toLowerCase();
 
   return (
     <div>
       <div>
-        <Link href={"/"}>
+        <Link href={`/user/${myFriend.id}`}>
           <div className="card bg-base-100 shadow-sm p-6">
             <figure>
               <Image
@@ -29,6 +37,7 @@ const FriendsCard = (friend) => {
                 alt="name"
                 height={80}
                 width={80}
+                loading="eager"
                 className="rounded-full shadow-md border-2 border-neutral-100 h-30 w-30 object-fit-cover mb-3"
               />
             </figure>

@@ -18,7 +18,7 @@ const HeroText = () => {
                 relationship fades away.
               </p>
               <button className="btn bg-(--bg-primary) text-white">
-                <LucidePlus /> Add a Friend
+                <LucidePlus /> Add to Bonds
               </button>
             </div>
           </div>

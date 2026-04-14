@@ -9,7 +9,7 @@ const StatsCards = () => {
             <h2 className="text-3xl font-semibold text-(--text-secondary)">
               10
             </h2>
-            <p className="text-lg text-(--text-muted)">Total Friends</p>
+            <p className="text-lg text-(--text-muted)">Total Connection</p>
           </div>
         </div>
         <div className="card card-border bg-base-100 shadow p-2 justify-center items-center">
