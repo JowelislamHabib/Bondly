@@ -15,7 +15,7 @@ const FriendsCard = (friend) => {
   };
   console.log(friend.friend);
   const myFriend = friend.friend;
-  const { name, picture, tags } = myFriend;
+  const { name, picture, tags, days_since_contact } = myFriend;
   const checkStatus = myFriend.status.toLowerCase();
 
   return (
@@ -34,7 +34,7 @@ const FriendsCard = (friend) => {
             </figure>
             <div className="flex flex-col gap-2 items-center text-center">
               <h2 className="text-xl font-semibold">{name}</h2>
-              <small>62d ago</small>
+              <small>{days_since_contact} days ago</small>
               <div className="flex gap-2">
                 {tags.map((tag, index) => (
                   <span

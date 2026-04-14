@@ -9,13 +9,13 @@ const HeroText = () => {
           <div className=" text-center">
             <div className="">
               <h1 className="text-3xl lg:text-5xl font-bold capitalize">
-                Friends to keep close in your life
+                Build Bonds That Last
               </h1>
               <p className="py-6">
-                Your personal shelf of meaningful connections. Browse, tend, and
-                nurture the
+                A simple way to maintain meaningful relationships.
                 <br />
-                relationships that matter most.
+                Track, manage, and strengthen your connections so no important
+                relationship fades away.
               </p>
               <button className="btn bg-(--bg-primary) text-white">
                 <LucidePlus /> Add a Friend
