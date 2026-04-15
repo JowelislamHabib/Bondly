@@ -54,8 +54,6 @@ const FriendsCard = ({ friend }) => {
             </div>
           </div>
         </figure>
-
-        {/* 8 empty divs needed for the 3D effect in DaisyUI 5 */}
         <div></div>
         <div></div>
         <div></div>
