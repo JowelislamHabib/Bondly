@@ -3,6 +3,7 @@ import React from "react";
 import { useContext } from "react";
 import { TimelineContext } from "@/context/TimelineContext";
 import NoDataFound from "../components/NoDataFound";
+import Footer from "../components/Footer";
 
 const TimelinePage = () => {
   const { timelineEvents, filteredEvents, filter, setFilter } =
@@ -59,6 +60,8 @@ const TimelinePage = () => {
           </div>
         ))}
       </div>
+
+      <Footer />
     </div>
   );
 };
