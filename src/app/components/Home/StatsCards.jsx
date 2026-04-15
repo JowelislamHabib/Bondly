@@ -19,7 +19,7 @@ const StatsCards = () => {
         <div className="card card-border bg-base-100 shadow p-2 justify-center items-center">
           <div className="card-body text-center">
             <h2 className="text-3xl font-semibold text-(--text-secondary)">
-              10
+              11
             </h2>
             <p className="text-lg text-(--text-muted)">On Track</p>
           </div>
@@ -27,7 +27,7 @@ const StatsCards = () => {
         <div className="card card-border bg-base-100 shadow p-2 justify-center items-center">
           <div className="card-body text-center">
             <h2 className="text-3xl font-semibold text-(--text-secondary)">
-              10
+              3
             </h2>
             <p className="text-lg text-(--text-muted)">Need Attention</p>
           </div>
