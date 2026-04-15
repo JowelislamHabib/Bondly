@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import { Handshake, MessageCircle, Video, Phone } from "lucide-react";
 import { useContext } from "react";
 import { TimelineContext } from "@/context/TimelineContext";
 import NoDataFound from "../components/NoDataFound";
 
 const TimelinePage = () => {
-  const { timelineEvents } = useContext(TimelineContext);
+  const { timelineEvents, filteredEvents, filter, setFilter } =
+    useContext(TimelineContext);
 
   console.log(timelineEvents);
 
@@ -17,9 +17,22 @@ const TimelinePage = () => {
   return (
     <div>
       <div className="container mx-auto px-4">
-        {timelineEvents.map((event, index) => (
+        <h1 className="text-5xl font-bold text-(--text-secondary)">Timeline</h1>
+        <div className="flex items-center rounded-4xl my-4">
+          <select
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            className="select shadow opacity-60 rounded"
+          >
+            <option value="All">All</option>
+            <option value="Call">Call</option>
+            <option value="Video">Video</option>
+            <option value="Text">Text</option>
+          </select>
+        </div>
+        {filteredEvents.map((event, index) => (
           <div key={index}>
-            <div className="card w-full bg-base-100 border border-slate-200 rounded-xl shadow-sm mb-2">
+            <div className="card w-full bg-base-100 border border-slate-200 rounded-xl shadow-sm mb-4">
               <div className="card-body flex-row items-center gap-4 py-3 px-5">
                 {event.type.toLowerCase() == "call" ? (
                   <div className="text-3xl flex-none">📞</div>

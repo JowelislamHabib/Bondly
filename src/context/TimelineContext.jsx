@@ -5,6 +5,7 @@ export const TimelineContext = createContext();
 
 const TimelineProvider = ({ children }) => {
   const [timelineEvents, setTimelineEvents] = useState([]);
+  const [filter, setFilter] = useState("All");
 
   const addTimelineEvent = (selectedType, friendName) => {
     const newTimelineEvent = {
@@ -20,10 +21,20 @@ const TimelineProvider = ({ children }) => {
     setTimelineEvents((prev) => [newTimelineEvent, ...prev]);
   };
 
+  const filteredEvents =
+    filter === "All"
+      ? timelineEvents
+      : timelineEvents.filter(
+          (event) => event.type.toLowerCase() === filter.toLowerCase(),
+        );
+
   const data = {
     timelineEvents,
     setTimelineEvents,
     addTimelineEvent,
+    filter,
+    setFilter,
+    filteredEvents,
   };
   return (
     <TimelineContext.Provider value={data}>{children}</TimelineContext.Provider>
