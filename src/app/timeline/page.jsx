@@ -60,8 +60,6 @@ const TimelinePage = () => {
           </div>
         ))}
       </div>
-
-      <Footer />
     </div>
   );
 };

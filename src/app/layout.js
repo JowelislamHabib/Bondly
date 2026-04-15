@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import FriendProvider from "@/context/FriendsContext";
 import TimelineProvider from "@/context/TimelineContext";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
         <FriendProvider>
           <TimelineProvider>{children}</TimelineProvider>
         </FriendProvider>
+        <Footer />
       </body>
     </html>
   );

@@ -19,7 +19,6 @@ export default function Home() {
           <FriendsList />
         </section>
       </main>
-      <Footer />
     </>
   );
 }

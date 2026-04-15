@@ -189,7 +189,6 @@ const UserDetailsPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
