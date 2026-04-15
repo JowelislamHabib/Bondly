@@ -8,9 +8,7 @@ const FriendProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchFriends = async () => {
-      const response = await fetch(
-        "https://bondly-theta.vercel.app/friends.json",
-      );
+      const response = await fetch("http://localhost:3000/friends.json");
       const data = await response.json();
       setFriends(data);
     };

@@ -1,5 +1,6 @@
 "use client";
-import React, { Suspense, use, useContext } from "react";
+import React, { useContext } from "react";
+
 import {
   LucideArchive,
   LucideBellRing,
@@ -12,6 +13,7 @@ import Image from "next/image";
 import Footer from "@/app/components/Footer";
 import { FriendContext } from "@/context/FriendsContext";
 import { useParams } from "next/navigation";
+import { TimelineContext } from "@/context/TimelineContext";
 
 const UserDetailsPage = () => {
   const { id } = useParams();
