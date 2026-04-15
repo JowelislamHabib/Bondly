@@ -1,25 +1,13 @@
+"use client";
+import { FriendContext } from "@/context/FriendsContext";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useContext } from "react";
 
-const FriendsCard = ({ friend, params }) => {
-  const para = async (params) => {
-    const response = await fetch(
-      "https://bondly-theta.vercel.app/friends.json",
-    );
-    const friends = await response.json();
-    console.log(friends);
-  };
-
+const FriendsCard = ({ friend }) => {
   const myFriend = friend;
-  console.log(params);
   const { name, picture, tags, days_since_contact } = myFriend;
-
-  const relationStatus = {
-    overdue: "bg-red-600 text-white border-red-700",
-    "almost due": "bg-yellow-500 text-black border-yellow-600",
-    "on-track": "bg-emerald-600 text-white border-emerald-700",
-  };
+  const { status } = useContext(FriendContext);
 
   const checkStatus = myFriend.status.toLowerCase();
 
@@ -52,7 +40,7 @@ const FriendsCard = ({ friend, params }) => {
                 ))}
               </div>
               <p
-                className={`px-4 py-2 rounded-full text-sm font-medium ${relationStatus[checkStatus] || "bg-gray-100 text-gray-700 border border-gray-200"}`}
+                className={`px-4 py-2 rounded-full text-sm font-medium ${status[checkStatus]} || "bg-gray-100 text-gray-700 border border-gray-200"}`}
               >
                 <span className="capitalize">{checkStatus}</span>
               </p>

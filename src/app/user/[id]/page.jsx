@@ -1,4 +1,5 @@
-import React, { use } from "react";
+"use client";
+import React, { Suspense, use, useContext } from "react";
 import {
   LucideArchive,
   LucideBellRing,
@@ -9,17 +10,22 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Footer from "@/app/components/Footer";
+import { FriendContext } from "@/context/FriendsContext";
+import { useParams } from "next/navigation";
 
-const UserDetailsPage = async (params) => {
-  const para = await params.params;
-  const userId = para.id;
-  console.log(userId);
+const UserDetailsPage = () => {
+  const { id } = useParams();
+  // console.log(id);
+  const { friends } = useContext(FriendContext);
 
-  const response = await fetch("https://bondly-theta.vercel.app/friends.json");
-  const friends = await response.json();
-  console.log(friends);
+  if (friends.length === 0)
+    return (
+      <div className="text-center mt-20">
+        <span className="loading loading-bars loading-xl"></span>
+      </div>
+    );
 
-  const user = friends.find((friend) => friend.id === parseInt(userId));
+  const user = friends.find((friend) => friend.id === parseInt(id));
 
   const {
     name,

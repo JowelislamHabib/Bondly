@@ -1,13 +1,17 @@
-import React from "react";
+"use client";
+import { FriendContext } from "@/context/FriendsContext";
+import React, { useContext } from "react";
 
 const StatsCards = () => {
+  const { friends } = useContext(FriendContext);
+  // console.log(friends);
   return (
     <div>
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
         <div className="card card-border bg-base-100 shadow p-2 justify-center items-center">
           <div className="card-body text-center">
             <h2 className="text-3xl font-semibold text-(--text-secondary)">
-              10
+              {friends.length}
             </h2>
             <p className="text-lg text-(--text-muted)">Total Connection</p>
           </div>

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Footer from "./components/Footer";
 import FriendsList from "./components/Home/FriendsList";
 import HeroText from "./components/Home/HeroText";
