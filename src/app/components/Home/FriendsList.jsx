@@ -6,7 +6,7 @@ import FriendProvider, { FriendContext } from "@/context/FriendsContext";
 const FriendsList = () => {
   const { friends } = useContext(FriendContext);
   // console.log(params);
-  console.log(friends);
+  // console.log(friends);
 
   return (
     <div className="container mx-auto px-4 mb-12">
