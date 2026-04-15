@@ -15,7 +15,7 @@ const UserDetailsPage = async (params) => {
   const userId = para.id;
   console.log(userId);
 
-  const response = await fetch("http://localhost:3000/friends.json");
+  const response = await fetch("https://bondly-theta.vercel.app/friends.json");
   const friends = await response.json();
   console.log(friends);
 

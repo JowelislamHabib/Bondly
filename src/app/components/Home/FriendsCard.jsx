@@ -4,7 +4,9 @@ import React from "react";
 
 const FriendsCard = ({ friend, params }) => {
   const para = async (params) => {
-    const response = await fetch("http://localhost:3000/friends.json");
+    const response = await fetch(
+      "https://bondly-theta.vercel.app/friends.json",
+    );
     const friends = await response.json();
     console.log(friends);
   };
@@ -14,14 +16,9 @@ const FriendsCard = ({ friend, params }) => {
   const { name, picture, tags, days_since_contact } = myFriend;
 
   const relationStatus = {
-    active: "bg-green-600 text-white border-green-700",
-    "strong-connection": "bg-emerald-600 text-white border-emerald-700",
-    "recently-contacted": "bg-sky-600 text-white border-sky-700",
-    "client-active": "bg-blue-600 text-white border-blue-700",
-    occasional: "bg-indigo-600 text-white border-indigo-700",
-    "at-risk": "bg-yellow-500 text-black border-yellow-600",
     overdue: "bg-red-600 text-white border-red-700",
-    dormant: "bg-gray-600 text-white border-gray-700",
+    "almost due": "bg-yellow-500 text-black border-yellow-600",
+    "on-track": "bg-emerald-600 text-white border-emerald-700",
   };
 
   const checkStatus = myFriend.status.toLowerCase();
