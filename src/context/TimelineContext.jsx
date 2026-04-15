@@ -10,7 +10,11 @@ const TimelineProvider = ({ children }) => {
     const newTimelineEvent = {
       type: selectedType,
       person: friendName,
-      date: new Date().toLocaleDateString(),
+      date: new Date().toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
     };
 
     setTimelineEvents((prev) => [newTimelineEvent, ...prev]);
