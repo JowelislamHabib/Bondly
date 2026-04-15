@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Aiden Markram",
-    "picture": "https://i.ibb.co.com/C3cvQXGp/image.png",
+    "picture": "https://i.pravatar.cc/400?img=10",
     "email": "aiden.markram@example.com",
     "days_since_contact": 9,
     "status": "almost due",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Pat Cummins",
-    "picture": "https://i.ibb.co.com/TBKxpxSF/image.png",
+    "picture": "https://i.pravatar.cc/400?img=11",
     "email": "pat.cummins@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Mustafizur Rahman",
-    "picture": "https://i.ibb.co.com/R4949hm7/image.png",
+    "picture": "https://i.pravatar.cc/400?img=12",
     "email": "mustafizur.rahman@example.com",
     "days_since_contact": 15,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Quinton de Kock",
-    "picture": "https://i.ibb.co.com/C5RdGSNH/image.png",
+    "picture": "https://i.pravatar.cc/400?img=13",
     "email": "quinton.kock@example.com",
     "days_since_contact": 7,
     "status": "almost due",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Warner",
-    "picture": "https://i.ibb.co.com/vvrXC8vK/image.png",
+    "picture": "https://i.pravatar.cc/400?img=14",
     "email": "david.warner@example.com",
     "days_since_contact": 11,
     "status": "overdue",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Shakib Al Hasan",
-    "picture": "https://i.ibb.co.com/jvDK6mP9/image.png",
+    "picture": "https://i.pravatar.cc/400?img=15",
     "email": "shakib.hasan@example.com",
     "days_since_contact": 6,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Jason Holder",
-    "picture": "https://i.ibb.co.com/TxD8vxdc/image.png",
+    "picture": "https://i.pravatar.cc/400?img=16",
     "email": "jason.holder@example.com",
     "days_since_contact": 13,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Mohammad Rizwan",
-    "picture": "https://i.ibb.co.com/DHZ5bw75/image.png",
+    "picture": "https://i.pravatar.cc/400?img=17",
     "email": "rizwan@example.com",
     "days_since_contact": 4,
     "status": "on-track",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Jos Buttler",
-    "picture": "https://i.ibb.co.com/5xch16mY/image.png",
+    "picture": "https://i.pravatar.cc/400?img=18",
     "email": "jos.buttler@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Shaheen Afridi",
-    "picture": "https://i.ibb.co.com/N61w13VC/image.png",
+    "picture": "https://i.pravatar.cc/400?img=56",
     "email": "shaheen.afridi@example.com",
     "days_since_contact": 14,
     "status": "overdue",
@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Rahmanullah Gurbaz",
-    "picture": "https://i.ibb.co.com/FRz1KMr/image.png",
+    "picture": "https://i.pravatar.cc/400?img=57",
     "email": "gurbaz@example.com",
     "days_since_contact": 8,
     "status": "almost due",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Steve Smith",
-    "picture": "https://i.ibb.co.com/mYqYR5q/image.png",
+    "picture": "https://i.pravatar.cc/400?img=58",
     "email": "steve.smith@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -146,7 +146,7 @@
   {
     "id": 13,
     "name": "Devon Conway",
-    "picture": "https://i.ibb.co.com/f50kVWc/image.png",
+    "picture": "https://i.pravatar.cc/400?img=59",
     "email": "devon.conway@example.com",
     "days_since_contact": 9,
     "status": "overdue",
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "name": "Ben Stokes",
-    "picture": "https://i.ibb.co.com/TDSCZx3y/image.png",
+    "picture": "https://i.pravatar.cc/400?img=60",
     "email": "ben.stokes@example.com",
     "days_since_contact": 6,
     "status": "on-track",
@@ -170,7 +170,7 @@
   {
     "id": 15,
     "name": "Kagiso Rabada",
-    "picture": "https://i.ibb.co.com/ccVBgMxP/image.png",
+    "picture": "https://i.pravatar.cc/400?img=61",
     "email": "rabada@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -182,7 +182,7 @@
   {
     "id": 16,
     "name": "Tamim Iqbal",
-    "picture": "https://i.ibb.co.com/PzMHQHfc/image.png",
+    "picture": "https://i.pravatar.cc/400?img=62",
     "email": "tamim.iqbal@example.com",
     "days_since_contact": 10,
     "status": "overdue",
@@ -194,7 +194,7 @@
   {
     "id": 17,
     "name": "Rashid Khan",
-    "picture": "https://i.ibb.co.com/svS6NVQv/image.png",
+    "picture": "https://i.pravatar.cc/400?img=70",
     "email": "rashid.khan@example.com",
     "days_since_contact": 1,
     "status": "on-track",
@@ -206,7 +206,7 @@
   {
     "id": 18,
     "name": "Babar Azam",
-    "picture": "https://i.ibb.co.com/Zp5W8LGw/image.png",
+    "picture": "https://i.pravatar.cc/400?img=69",
     "email": "babar.azam@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -218,7 +218,7 @@
   {
     "id": 19,
     "name": "Nicholas Pooran",
-    "picture": "https://i.ibb.co.com/zhDPM4DS/image.png",
+    "picture": "https://i.pravatar.cc/400?img=68",
     "email": "pooran@example.com",
     "days_since_contact": 11,
     "status": "overdue",
@@ -230,7 +230,7 @@
   {
     "id": 20,
     "name": "Alzarri Joseph",
-    "picture": "https://i.ibb.co.com/RrZVF02/image.png",
+    "picture": "https://i.pravatar.cc/400?img=67",
     "email": "joseph@example.com",
     "days_since_contact": 13,
     "status": "overdue",
@@ -242,7 +242,7 @@
   {
     "id": 21,
     "name": "Kane Williamson",
-    "picture": "https://i.ibb.co.com/WpvP3T1S/image.png",
+    "picture": "https://i.pravatar.cc/400?img=66",
     "email": "williamson@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -254,7 +254,7 @@
   {
     "id": 22,
     "name": "Trent Boult",
-    "picture": "https://i.ibb.co.com/1YKcfR8b/image.png",
+    "picture": "https://i.pravatar.cc/400?img=65",
     "email": "boult@example.com",
     "days_since_contact": 7,
     "status": "on-track",
@@ -266,7 +266,7 @@
   {
     "id": 23,
     "name": "Joe Root",
-    "picture": "https://i.ibb.co.com/Mk2j9t3r/image.png",
+    "picture": "https://i.pravatar.cc/400?img=64",
     "email": "joe.root@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -278,7 +278,7 @@
   {
     "id": 24,
     "name": "Mohammad Nabi",
-    "picture": "https://i.ibb.co.com/Ww6HNmS/image.png",
+    "picture": "https://i.pravatar.cc/400?img=63",
     "email": "nabi@example.com",
     "days_since_contact": 9,
     "status": "overdue",

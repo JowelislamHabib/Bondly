@@ -22,7 +22,7 @@ const FriendsList = () => {
         )}
       </div>
 
-      <div className="grid md:grid-col-2 lg:grid-cols-4 gap-4 mt-4">
+      <div className="grid md:grid-col-2 lg:grid-cols-4 gap-8 mt-4">
         {friends.map((friend) => (
           <FriendsCard key={friend.id} friend={friend} />
         ))}
