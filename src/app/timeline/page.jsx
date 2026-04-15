@@ -3,9 +3,16 @@ import React from "react";
 import { Handshake, MessageCircle, Video, Phone } from "lucide-react";
 import { useContext } from "react";
 import { TimelineContext } from "@/context/TimelineContext";
+import NoDataFound from "../components/NoDataFound";
 
 const TimelinePage = () => {
   const { timelineEvents } = useContext(TimelineContext);
+
+  console.log(timelineEvents);
+
+  if (timelineEvents.length === 0) {
+    return <NoDataFound />;
+  }
 
   return (
     <div>

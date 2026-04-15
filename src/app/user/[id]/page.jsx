@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import Footer from "@/app/components/Footer";
 import { FriendContext } from "@/context/FriendsContext";
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import { TimelineContext } from "@/context/TimelineContext";
 
 const UserDetailsPage = () => {
@@ -29,7 +29,9 @@ const UserDetailsPage = () => {
     );
 
   const user = friends.find((friend) => friend.id === parseInt(id));
-
+  if (!user) {
+    notFound();
+  }
   const {
     name,
     picture,
