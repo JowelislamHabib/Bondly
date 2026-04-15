@@ -64,32 +64,32 @@ Bondly helps users organize relationships, track interactions, and strengthen pe
 
 ```text
 bondly/
-src
- ┣ app
- ┃ ┣ components
- ┃ ┃ ┣ Home
- ┃ ┃ ┃ ┣ FriendsCard.jsx
- ┃ ┃ ┃ ┣ FriendsList.jsx
- ┃ ┃ ┃ ┣ HeroText.jsx
- ┃ ┃ ┃ ┗ StatsCards.jsx
- ┃ ┃ ┣ Footer.jsx
- ┃ ┃ ┣ NavBar.jsx
- ┃ ┃ ┗ NoDataFound.jsx
- ┃ ┣ stats
- ┃ ┃ ┗ page.jsx
- ┃ ┣ timeline
- ┃ ┃ ┗ page.jsx
- ┃ ┣ user
- ┃ ┃ ┗ [id]
- ┃ ┃ ┃ ┗ page.jsx
- ┃ ┣ favicon.ico
- ┃ ┣ globals.css
- ┃ ┣ layout.js
- ┃ ┣ not-found.js
- ┃ ┗ page.js
- ┗ context
- ┃ ┣ FriendsContext.jsx
- ┃ ┗ TimelineContext.jsx
+└── src/
+    ├── app/
+    │   ├── components/
+    │   │   ├── Home/
+    │   │   │   ├── FriendsCard.jsx
+    │   │   │   ├── FriendsList.jsx
+    │   │   │   ├── HeroText.jsx
+    │   │   │   └── StatsCards.jsx
+    │   │   ├── Footer.jsx
+    │   │   ├── NavBar.jsx
+    │   │   └── NoDataFound.jsx
+    │   ├── stats/
+    │   │   └── page.jsx
+    │   ├── timeline/
+    │   │   └── page.jsx
+    │   ├── user/
+    │   │   └── [id]/
+    │   │       └── page.jsx
+    │   ├── favicon.ico
+    │   ├── globals.css
+    │   ├── layout.js
+    │   ├── not-found.js
+    │   └── page.js
+    └── context/
+        ├── FriendsContext.jsx
+        └── TimelineContext.jsx
 ```
 
 ## 🤝 Contributing
