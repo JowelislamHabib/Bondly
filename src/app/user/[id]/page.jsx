@@ -19,6 +19,7 @@ const UserDetailsPage = () => {
   const { id } = useParams();
   // console.log(id);
   const { friends } = useContext(FriendContext);
+  const { addTimelineEvent } = useContext(TimelineContext);
 
   if (friends.length === 0)
     return (
@@ -141,18 +142,27 @@ const UserDetailsPage = () => {
                     Quick Check-In
                   </h3>
                   <div className="grid grid-cols-3 gap-4">
-                    <button className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer">
+                    <button
+                      onClick={() => addTimelineEvent("Call", user.name)}
+                      className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer"
+                    >
                       <LucidePhone size={24} className="text-slate-800" />
                       <span className="text-lg font-medium">Call</span>
                     </button>
-                    <button className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer">
+                    <button
+                      onClick={() => addTimelineEvent("Text", user.name)}
+                      className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer"
+                    >
                       <LucideMessageSquare
                         size={24}
                         className="text-slate-800"
                       />
                       <span className="text-lg font-medium">Text</span>
                     </button>
-                    <button className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer">
+                    <button
+                      onClick={() => addTimelineEvent("Video", user.name)}
+                      className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer"
+                    >
                       <LucideVideo size={24} className="text-slate-800" />
                       <span className="text-lg font-medium">Video</span>
                     </button>

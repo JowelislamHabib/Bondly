@@ -1,88 +1,43 @@
+"use client";
 import React from "react";
 import { Handshake, MessageCircle, Video, Phone } from "lucide-react";
+import { useContext } from "react";
+import { TimelineContext } from "@/context/TimelineContext";
 
 const TimelinePage = () => {
-  const events = [
-    {
-      type: "Meetup",
-      person: "Tom Baker",
-      date: "March 29, 2026",
-      icon: <Handshake className="text-amber-500" />,
-    },
-    {
-      type: "Text",
-      person: "Sarah Chen",
-      date: "March 28, 2026",
-      icon: <MessageCircle className="text-gray-400" />,
-    },
-    {
-      type: "Meetup",
-      person: "Olivia Martinez",
-      date: "March 26, 2026",
-      icon: <Handshake className="text-amber-500" />,
-    },
-    {
-      type: "Video",
-      person: "Aisha Patel",
-      date: "March 23, 2026",
-      icon: <Video className="text-slate-600" />,
-    },
-    {
-      type: "Meetup",
-      person: "Sarah Chen",
-      date: "March 21, 2026",
-      icon: <Handshake className="text-amber-500" />,
-    },
-    {
-      type: "Call",
-      person: "Marcus Johnson",
-      date: "March 19, 2026",
-      icon: <Phone className="text-slate-700" />,
-    },
-    {
-      type: "Meetup",
-      person: "Aisha Patel",
-      date: "March 17, 2026",
-      icon: <Handshake className="text-amber-500" />,
-    },
-  ];
+  const { timelineEvents } = useContext(TimelineContext);
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="mx-auto p-8 bg-slate-50  text-slate-800">
-        <h1 className="text-4xl font-bold mb-6">Timeline</h1>
-
-        <select
-          defaultValue=""
-          className="select select-bordered w-full max-w-xs mb-8 bg-white border-slate-200"
-        >
-          <option value="" disabled>
-            Filter timeline
-          </option>
-          <option value="All">All entries</option>
-          <option value="Call">Call</option>
-          <option value="Text">Text</option>
-          <option value="Video">Video</option>
-          <option value="Meetup">Meetup</option>
-        </select>
-
-        <div className="flex flex-col gap-3">
-          {events.map((event, index) => (
-            <div
-              key={index}
-              className="card flex-row items-center gap-4 p-5 bg-white border border-slate-100 shadow-sm"
-            >
-              <div className="text-2xl">{event.icon}</div>
-              <div>
-                <p className="text-slate-600 font-medium">
-                  <span className="text-slate-900 font-bold">{event.type}</span>{" "}
-                  with {event.person}
-                </p>
-                <p className="text-slate-400 text-sm">{event.date}</p>
+    <div>
+      <div className="container mx-auto px-4">
+        {timelineEvents.map((event, index) => (
+          <div key={index}>
+            <div className="card w-full bg-base-100 border border-slate-200 rounded-xl shadow-sm mb-2">
+              <div className="card-body flex-row items-center gap-4 py-3 px-5">
+                {event.type.toLowerCase() == "call" ? (
+                  <div className="text-3xl flex-none">📞</div>
+                ) : event.type.toLowerCase() == "video" ? (
+                  <div className="text-3xl flex-none">📹</div>
+                ) : (
+                  <div className="text-3xl flex-none">💬</div>
+                )}
+                <div className="flex flex-col">
+                  <div className="flex flex-row gap-1.5 items-baseline">
+                    <h2 className="text-[17px] font-semibold text-[#2D4F43]">
+                      {event.type}
+                    </h2>
+                    <span className="text-[17px] text-slate-500 font-normal">
+                      with {event.person}
+                    </span>
+                  </div>
+                  <p className="text-[14px] text-slate-400 font-medium">
+                    {event.date}
+                  </p>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
