@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import FriendsList from "./components/Home/FriendsList";
 import HeroText from "./components/Home/HeroText";
 import StatsCards from "./components/Home/StatsCards";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (

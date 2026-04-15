@@ -14,6 +14,7 @@ import Footer from "@/app/components/Footer";
 import { FriendContext } from "@/context/FriendsContext";
 import { notFound, useParams } from "next/navigation";
 import { TimelineContext } from "@/context/TimelineContext";
+import { ToastContainer, toast } from "react-toastify";
 
 const UserDetailsPage = () => {
   const { id } = useParams();
@@ -64,6 +65,7 @@ const UserDetailsPage = () => {
                       />
                     </div>
                   </div>
+
                   <h2 className="text-xl font-bold text-slate-800">{name}</h2>
                   <div className="flex flex-col gap-2 mt-2 items-center">
                     <p className="badge badge-error text-white text-sm font-medium rounded-full capitalize">
@@ -145,14 +147,21 @@ const UserDetailsPage = () => {
                   </h3>
                   <div className="grid grid-cols-3 gap-4">
                     <button
-                      onClick={() => addTimelineEvent("Call", user.name)}
+                      onClick={() => {
+                        addTimelineEvent("Call", user.name);
+                        toast.success("Wow! You Just Made A Call!");
+                      }}
                       className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer"
                     >
                       <LucidePhone size={24} className="text-slate-800" />
                       <span className="text-lg font-medium">Call</span>
                     </button>
+
                     <button
-                      onClick={() => addTimelineEvent("Text", user.name)}
+                      onClick={() => {
+                        addTimelineEvent("Text", user.name);
+                        toast.success("Nice! You Sent A Text!");
+                      }}
                       className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer"
                     >
                       <LucideMessageSquare
@@ -161,13 +170,18 @@ const UserDetailsPage = () => {
                       />
                       <span className="text-lg font-medium">Text</span>
                     </button>
+
                     <button
-                      onClick={() => addTimelineEvent("Video", user.name)}
+                      onClick={() => {
+                        addTimelineEvent("Video", user.name);
+                        toast.success("Awesome! Video Message Sent!");
+                      }}
                       className="flex flex-col items-center justify-center py-6 rounded-xl border-2 border-gray-100 bg-gray-50/50 hover:bg-gray-100 transition-all gap-2 cursor-pointer"
                     >
                       <LucideVideo size={24} className="text-slate-800" />
                       <span className="text-lg font-medium">Video</span>
                     </button>
+                    <ToastContainer />
                   </div>
                 </div>
               </div>

@@ -13,8 +13,8 @@ const NotFound = () => {
           <div className="-mt-12">
             <h2 className="text-3xl font-bold">Lost in space?</h2>
             <p className="py-6 text-base-content/70">
-              The page you are looking for doesn't exist or has been moved. Even
-              Tom Baker couldn't find this one!
+              The page you are looking for doesn&apos;t exist or has been moved.
+              Even Tom Baker couldn&apos;t find this one!
             </p>
 
             <div className="flex justify-center">

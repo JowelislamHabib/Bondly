@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Aiden Markram",
-    "picture": "https://i.pravatar.cc/400?img=10",
+    "picture": "https://i.pravatar.cc/400?img=54",
     "email": "aiden.markram@example.com",
     "days_since_contact": 9,
     "status": "almost due",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Jason Holder",
-    "picture": "https://i.pravatar.cc/400?img=16",
+    "picture": "https://i.pravatar.cc/400?img=55",
     "email": "jason.holder@example.com",
     "days_since_contact": 13,
     "status": "overdue",
