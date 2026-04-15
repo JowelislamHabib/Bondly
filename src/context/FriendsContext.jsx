@@ -8,7 +8,9 @@ const FriendProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchFriends = async () => {
-      const response = await fetch("https://bondly.vercel.app/friends.json");
+      const response = await fetch("https://bondly.vercel.app/friends.json", {
+        cache: "no-store",
+      });
       const data = await response.json();
       setFriends(data);
     };
