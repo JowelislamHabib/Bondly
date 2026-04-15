@@ -24,7 +24,6 @@ Bondly helps users organize relationships, track interactions, and strengthen pe
 - User-friendly, responsive interface
 - Fast page loads and smooth navigation
 - Structured profile and connection management
-- Search and filtering for quick discovery
 - Toast notifications for UX feedback
 - Chart/data visualization support
 - Scalable project architecture for future growth
