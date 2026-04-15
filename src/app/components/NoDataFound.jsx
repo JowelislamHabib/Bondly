@@ -6,7 +6,7 @@ const NoDataFound = () => {
     <div className="container mx-auto px-4">
       <div>
         <div className="hero min-h-100 bg-base-200/50 rounded-2xl border-2 border-dashed border-base-300">
-          <div className="hero-content text-center">
+          <div className="hero-content mx-auto text-center">
             <div className="max-w-md">
               <div className="text-6xl mb-6 opacity-70">😥</div>
 
