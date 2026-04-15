@@ -8,7 +8,7 @@ const TimelinePage = () => {
   const { timelineEvents, filteredEvents, filter, setFilter } =
     useContext(TimelineContext);
 
-  console.log(timelineEvents);
+  // console.log(timelineEvents);
 
   if (timelineEvents.length === 0) {
     return <NoDataFound />;
